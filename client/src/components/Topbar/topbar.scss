@@ -24,10 +24,29 @@
 
   }
 
-  &-avatar {
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 50%;
-    background-color: $golden-yellow;
+  &-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+    
+    &--loginbtn {
+      @include font-face('Montserrat', 1.4rem, 400);
+      color: #FFFFFF;
+      background: $brown-2;
+      width: 7.2rem;
+      border: none;
+      height: 3.4rem;
+      line-height: 83.6%;
+      border-radius: .5rem;
+      cursor: pointer;
+    }
+    
+    &--avatar {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+      background-color: $golden-yellow;
+      cursor: pointer;
+    }
   }
 }
