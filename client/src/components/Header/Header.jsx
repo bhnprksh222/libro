@@ -1,8 +1,8 @@
 import React from 'react'
 
+import Topbar from '../Topbar/Topbar';
 import './header.scss';
 
-import { ReactComponent as Logo } from '../../assets/libro-logo.svg';
 import book1 from '../../assets/book-1.png';
 import book2 from '../../assets/book-2.png';
 import book3 from '../../assets/book-3.png';
@@ -10,10 +10,7 @@ import book3 from '../../assets/book-3.png';
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-topbar">
-        <Logo className="header-topbar--logo" />
-        <div className="header-topbar--avatar"></div>
-      </div>
+      <Topbar />
       <div className="header-content">
         <div className="header-content--title">
           <p className="header-content--title_1">Find u`r <br/> Best friend</p>
