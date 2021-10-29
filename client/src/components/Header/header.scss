@@ -1,0 +1,137 @@
+@import '../../sass/theme.scss';
+
+.header {
+
+  &-topbar {
+    padding: 4rem 6rem 0 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    @media only screen and (max-width: 32.5em) {
+      padding: 4rem 6rem 0 6rem;
+    }
+
+    @media only screen and (max-width: 30.625em) {
+      padding: 4rem 6rem 0 6rem;
+    }
+    
+    @media only screen and (max-width: 26.125em) {
+      padding: 4rem 6rem 0 4rem;
+    }
+
+    &--logo {
+      height: 4rem;
+      width: 7rem;
+
+    }
+
+    &--avatar {
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 50%;
+      background-color: $golden-yellow;
+    }
+  }
+
+  &-content {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+
+    &--title {
+      padding-bottom: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0.4;
+
+      &_1 {
+        @include font-face('Libre Caslon Text', 7.5rem, 400); 
+        line-height: 7.25rem;
+        color: $brown;
+        padding-bottom: 1.6rem;
+      }
+      
+      &_2 {
+        @include font-face('Montserrat', 1.6rem, 700); 
+        text-transform: uppercase;
+        letter-spacing: 1.35rem;
+        color: rgba($brown, 0.5);
+        position: relative;
+        padding-bottom: 1.2rem;
+        margin-left: 2.25rem;
+
+
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          height: 0.5px;
+          width: 39rem;
+          background: rgba(0, 0, 0, 0.24);
+          z-index: -1;
+        }
+      }
+    }
+
+    &--books {
+      padding-left: 5rem;
+      width: 100%;
+      flex: 0.6;
+      padding-top: 10rem;
+      z-index: 2;
+
+      & > * {
+        @media only screen and (max-width: 83.75em) {
+          width: 25rem;
+        }
+        
+        @media only screen and (max-width: 65em) {
+          width: 24.5rem;
+        }
+        
+        @media only screen and (max-width: 51em) {
+          width: 24rem;
+        }
+        
+        @media only screen and (max-width: 41.75em) {
+          width: 22rem;
+        }
+        
+        @media only screen and (max-width: 25.25em) {
+          width: 20rem;
+        }
+      }
+      
+      &-3 {
+        transform: translateY(.5rem);
+      }
+    }
+  }
+  
+  &-shelf {
+    width: 100%;
+    z-index: -1;
+    
+    @media only screen and (max-width: 41.875em) {
+      transform: translateY(-1rem);
+    }
+
+    @media only screen and (max-width: 52.5em) {
+      transform: translateY(-2rem);
+    }
+
+    &--1 {
+      height: 5rem;
+      background: linear-gradient(180deg, #EBE2D6 0%, #E0D5C7 100%);
+    }
+
+    &--2 {
+      height: 3rem;
+      background: #F5F2EB;
+      box-shadow: 0px 15px 25px 8px #CBC2B5;    
+    }
+  }
+}

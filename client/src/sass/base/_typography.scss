@@ -1,0 +1,10 @@
+@mixin font-face($family, $size: 1.6rem, $weight: normal, $style: normal) {
+	@if $family == 'Montserrat' {
+		font-family: 'Montserrat', monospace;
+  } @else if $family == 'Libre Caslon Text'{
+		font-family: 'Libre Caslon Text', serif;
+  }
+	font-weight: $weight;
+	font-style: $style;
+	font-size: $size;
+}
