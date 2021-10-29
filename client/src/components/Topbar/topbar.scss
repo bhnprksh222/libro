@@ -1,0 +1,33 @@
+@import '../../sass/theme.scss';
+
+.topbar {
+  padding: 4rem 6rem 0 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  @media only screen and (max-width: 32.5em) {
+    padding: 4rem 6rem 0 6rem;
+  }
+
+  @media only screen and (max-width: 30.625em) {
+    padding: 4rem 6rem 0 6rem;
+  }
+  
+  @media only screen and (max-width: 26.125em) {
+    padding: 4rem 6rem 0 4rem;
+  }
+
+  &-logo {
+    height: 4rem;
+    width: 7rem;
+
+  }
+
+  &-avatar {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: $golden-yellow;
+  }
+}
