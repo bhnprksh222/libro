@@ -1,0 +1,22 @@
+@import '../../../sass/theme.scss';
+
+.inputField {
+  @include font-face('Montserrat', 1.23rem, 400);
+  width: 31.7rem;
+  height: 3rem;
+  border-radius: .5rem;
+  outline: none;
+  background: transparent;
+  padding: 0 1.2rem;
+  border: 1px solid $golden-yellow;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &::placeholder { 
+    @include font-face('Montserrat', 1.23rem, 200);
+    line-height: 83.6%;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
