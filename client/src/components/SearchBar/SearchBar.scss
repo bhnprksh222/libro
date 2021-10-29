@@ -1,0 +1,16 @@
+@import '../../sass/theme.scss';
+
+.input-box{
+    border: 0;
+    padding: 0.7rem 1rem ;
+    // margin-left: 2rem;
+    background-color: transparent;
+    border-bottom: 1px solid #DAAA63;
+    width:245px;
+    line-height: 15.05px;
+    letter-spacing: -1.5%;
+    @include font-face("Libre Caslon Text",1.8rem);
+    &:focus{
+        outline: 0;
+    }
+}

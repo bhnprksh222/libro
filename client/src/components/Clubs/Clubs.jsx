@@ -7,6 +7,7 @@ import novels from '../../assets/novels.png';
 import h10 from '../../assets/h10.png';
 import nit from '../../assets/nit.png';
 import haryana from '../../assets/haryana.png';
+import AddBtn from '../AddBtn/AddBtn';
 
 const Clubs = () => {
   const clubCardContent = [
@@ -20,7 +21,7 @@ const Clubs = () => {
     <div className="clubs">
       <div className="clubs-top">
         <p className="clubs-top--title">Clubs nearby</p>
-        <button className="clubs-top--plusbtn">+</button>
+        <AddBtn />
       </div>
       <div className="clubs-cards">
         {
