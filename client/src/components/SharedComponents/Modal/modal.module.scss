@@ -1,29 +1,29 @@
 .modal {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 100000;
-  overflow-x: hidden;
-  backdrop-filter: blur(6px);
-  background: rgba(62, 62, 62, 0.6);
+  overflow: hidden;
   pointer-events: none;
   opacity: 0;
+  padding-right: 5rem;
 
   &CloseBtn {
     position: absolute;
-    height: 100vh;
     z-index: 2000000;
     margin: 1rem;
     cursor: pointer;
     background: none;
     border: none;
-    transform: translate(40rem, -23rem);
+    top: 0;
+    right: 0;
+    transform: translate(1rem, -1rem);
+    
     &Logo {
       //* TODO 
+      height: 3.2rem;
+      width: 3.2rem;
     }
   }
 

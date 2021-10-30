@@ -5,6 +5,7 @@ import './topbar.scss';
 
 import { ReactComponent as Logo } from '../../assets/libro-logo.svg';
 import Login from '../Login/Login';
+// import Signup from '../Signup/Signup';
 
 const Topbar = () => {
   const [show, setShow] = useState(false);
@@ -23,8 +24,13 @@ const Topbar = () => {
           <div className="topbar-btns--avatar"></div>
         </div>
       </div>
+      <div 
+        className={`${show ? "topbar-modelBgVisible" : "topbar-modelBgHidden"} topbar-modelBg`}
+        onClick={() => setShow(false)}
+      />
       <Modal show={show} onClose={() => setShow(false)}>
         <Login />
+        {/* <Signup /> */}
       </Modal>
     </>
   )

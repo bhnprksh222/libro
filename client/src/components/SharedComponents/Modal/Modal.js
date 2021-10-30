@@ -5,7 +5,13 @@ import Button from "./Button/Button";
 import { ReactComponent as CloseBtn } from '../../../assets/close-btn.svg';
 import classes from "./modal.module.scss";
 
-const Modal = ({ modalStyle, children, show, onClose, backdropStyle }) => {
+const Modal = ({ 
+  children, 
+  modalStyle, 
+  show, 
+  onClose, 
+  backdropStyle
+}) => {
   const modalRef = useRef(null);
   
   useEffect(() => {

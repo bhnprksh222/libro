@@ -1,18 +1,18 @@
 @import '../../../sass/theme.scss';
 
 .AddBtn{
-    @include font-face('Montserrat', 3rem, 400);
-      width: 3.6rem;
-      height: 3.6rem;
-      outline: 2px solid $golden-yellow;
-      border: none;
-      color: $brown;
-      margin-right: 2rem;
-      background: transparent;
-      border-radius: 50%;
-      cursor: pointer;
+  @include font-face('Montserrat', 3rem, 400);
+  width: 3.6rem;
+  height: 3.6rem;
+  outline: 2px solid $golden-yellow;
+  border: none;
+  color: $brown;
+  margin-right: 2rem;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
 
-      @media only screen and (max-width: 22.5em) {
-        outline: 1px solid $golden-yellow;
-      }
+  @media only screen and (max-width: 22.5em) {
+    outline: 1px solid $golden-yellow;
+  }
 }

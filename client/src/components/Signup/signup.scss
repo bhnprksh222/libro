@@ -1,6 +1,6 @@
 @import '../../sass/theme.scss';
 
-.login {
+.signup {
   display: flex;
   width: 100%;
   height: 100%;
@@ -30,7 +30,7 @@
       &::after {
         content: "";
         position: absolute;
-        left: -30%;
+        left: -20%;
         bottom: 0;
         height: 0.15rem;
         width: 5.5rem;
@@ -41,7 +41,7 @@
       &::before {
         content: "";
         position: absolute;
-        right: -30%;
+        right: -20%;
         bottom: 0;
         height: 0.15rem;
         width: 5.5rem;

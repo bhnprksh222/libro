@@ -2,7 +2,7 @@ import React from 'react';
 
 import InputField from '../SharedComponents/InputField/InputField';
 import { ReactComponent as LoginIllustration } from '../../assets/login-illustration.svg';
-import { ReactComponent as GoogleLogin } from '../../assets/google-icon.svg';
+// import { ReactComponent as GoogleLogin } from '../../assets/google-icon.svg';
 import './login.scss';
 
 const Login = () => {
@@ -32,10 +32,10 @@ const Login = () => {
             Login
           </button>
         </form>
-        <p className="login-input--or">OR</p>
-        <button className="login-input--google">
+        {/* <p className="login-input--or">OR</p> */}
+        {/* <button className="login-input--google">
           <GoogleLogin className="login-input--google-btn"/>
-        </button>
+        </button> */}
         {/* 
           //! NEED TO ADD A LINK  
         */}

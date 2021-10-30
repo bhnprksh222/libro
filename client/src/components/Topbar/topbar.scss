@@ -24,6 +24,27 @@
 
   }
 
+  &-modelBg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+    background: rgba(62, 62, 62, 0.6);
+    display: none;
+    
+    &Visible {
+      display: block;
+      opacity: 1;
+    }
+    
+    &Hidden {
+      opacity: 0;
+    }
+  }
+
   &-btns {
     display: flex;
     align-items: center;
