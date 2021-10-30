@@ -1,14 +1,14 @@
 import React from 'react';
 
 import ClubCard from './ClubCard';
-import SearchBar from '../SharedComponents/SearchBar/SearchBar';
+import SearchBar from '../../SharedComponents/SearchBar/SearchBar';
 import './clubs.scss';
 
-import novels from '../../assets/novels.png';
-import h10 from '../../assets/h10.png';
-import nit from '../../assets/nit.png';
-import haryana from '../../assets/haryana.png';
-import AddBtn from '../SharedComponents/AddBtn/AddBtn';
+import novels from '../../../assets/novels.png';
+import h10 from '../../../assets/h10.png';
+import nit from '../../../assets/nit.png';
+import haryana from '../../../assets/haryana.png';
+import AddBtn from '../../SharedComponents/AddBtn/AddBtn';
 
 const Clubs = () => {
   const clubCardContent = [

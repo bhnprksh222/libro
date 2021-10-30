@@ -1,0 +1,33 @@
+@import '../../../sass/theme.scss';
+
+.club-newsfeed{
+    padding: 0 25rem;
+}
+
+.newpostcard{
+    border: 1px solid rgba($golden-yellow,25%);
+    margin: 4rem 0;
+    padding: 1.5rem 2.5rem;
+    border-radius: 8px;
+
+    &--text{
+        @include font-face('Libre Caslon Text',2.2rem,400);
+        background-color: transparent;
+        border: 0;
+        resize: none;
+        width: 100%;
+        min-height: 12rem;
+        &:focus{
+            outline: 0;
+        }
+    }
+
+    &--footer{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        h1{
+            @include font-face('Montserrat',1.2rem,400)
+        }
+    }
+}

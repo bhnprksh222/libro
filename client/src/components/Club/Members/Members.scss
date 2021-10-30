@@ -1,0 +1,14 @@
+@import '../../../sass/theme.scss';
+
+.members{
+    padding: 1rem;
+    &--body{
+        padding: 1rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        row-gap: 3rem;
+    }
+    
+}

@@ -8,3 +8,9 @@
 	font-style: $style;
 	font-size: $size;
 }
+@mixin textwrap($count) {
+	display: -webkit-box;
+	-webkit-line-clamp: $count;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}

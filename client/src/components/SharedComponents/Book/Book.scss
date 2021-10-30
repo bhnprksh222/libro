@@ -1,0 +1,25 @@
+@import '../../../sass/theme.scss';
+
+.book{
+    display: flex;
+    width: 35%;
+    column-gap: 2rem;
+    &--DP{
+        width:48%;
+        img{
+            width: 100%;
+        }
+    }
+    &--details{
+        width:48%;
+        &--name{
+            @include font-face('Libre Caslon Text',2.8rem,400);
+            @include textwrap(2)
+        }
+        &--subheadings{
+            margin:1rem 0;
+            @include font-face('Montserrat',1.2rem,500);
+            @include textwrap(2)
+        }
+    }
+}
