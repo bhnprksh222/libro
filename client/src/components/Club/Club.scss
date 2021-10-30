@@ -1,0 +1,44 @@
+@import '../../sass/theme.scss';
+
+
+.clubHeader{
+    margin: 4rem 6rem 0 8rem;
+}
+
+.clubHead{
+    padding:1.5rem;
+    border: 2px solid $golden-yellow;
+    border-radius: 8px;
+    display: flex;
+    column-gap: 2rem;
+
+    &-details{
+        &--name{
+            @include font-face('Libre Caslon Text',3.6rem,400)
+        }
+        &--subHeading{
+            @include font-face('Montserrat',2rem,400)
+        }
+    }   
+}
+
+.club-navbar{
+    display: flex;
+    column-gap: 7rem;
+    padding: 1rem;
+    .navitem{
+        @include font-face('Montserrat',1.8rem,500);
+        cursor: pointer;
+        &:hover , &.active{
+            color: $golden-yellow;
+        }
+    }    
+    border-bottom: 2px solid $beige-2;
+}
+
+.clubBody{
+    margin: 4rem;
+}
+
+
+
