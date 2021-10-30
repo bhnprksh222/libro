@@ -26,9 +26,9 @@ const Club = () => {
                 </div>
             </div>
             <div className="clubBody" >
-                <Home />
+                {/* <Home /> */}
                 {/* <Books /> */}
-                {/* <Members /> */}
+                <Members />
             </div>
         </>
     )
